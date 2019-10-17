@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import "./style.css";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -15,16 +16,20 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2)
   },
   title: {
-    flexGrow: 1
+    flexGrow: 1,
+    fontSize: "30px"
+  },
+  navBar: {
+    backgroundColor: "rgb(206,219,48)"
   }
 }));
 
-export default function ButtonAppBar() {
+export default function NavBar() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.navBar} position="static">
         <Toolbar>
           <IconButton
             edge="start"
@@ -35,9 +40,11 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Green Range
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button href="/login" color="inherit">
+            Login
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

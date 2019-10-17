@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import ChoosePlanPage from "./pages/ChoosePlanPage";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     // <Wrapper>
     <Router>
+      <Route path="/" component={HomePage} />
       <Route path="/login" component={LoginPage} />
       <Route path="/plans" component={ChoosePlanPage} />
       <Route path="/signup" component={SignUpPage} />
