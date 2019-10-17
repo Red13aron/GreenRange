@@ -40,7 +40,7 @@ export default function AddressForm() {
       </Typography>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} >
-            <TextField 
+            <TextField
               required
               id="firstName"
               name="firstName"
@@ -118,6 +118,7 @@ export default function AddressForm() {
             />
           </Grid>
           <Button
+            href="/home"
             type="submit"
             fullWidth
             variant="contained"
