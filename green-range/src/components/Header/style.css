@@ -1,7 +1,7 @@
 .jumbotron-fluid {
   color: rgb(98, 250, 131);
   font-family: "Didact Gothic", sans-serif;
-  background-image: url(./backgroundHeader.jpeg);
+  background-image: url(./background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -10,7 +10,9 @@
   margin-left: 5px;
   margin-right: 5px;
   color: rgb(20, 12, 2);
-  border-radius: 15px;
+  border-radius: 5px;
+  height: 100%;
+  display: table;
 }
 
 h1 {
