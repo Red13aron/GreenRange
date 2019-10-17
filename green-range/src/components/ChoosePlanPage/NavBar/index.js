@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "30px"
   },
   navBar: {
-    backgroundColor: "rgb(159,65,152)",
+    backgroundColor: "rgb(206,219,48)",
   }
 }));
 
@@ -37,7 +37,7 @@ export default function NavBar() {
           <Typography variant="h6" className={classes.title}>
             Green Range
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button href="/login" color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </div>
