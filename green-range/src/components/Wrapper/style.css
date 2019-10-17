@@ -1,7 +1,8 @@
 .containner {
-  width: 100%;
+  width: 90%;
+
   display: flex;
-  background-color: rgb(243, 245, 127);
+  /* background-color: rgb(243, 245, 127); */
   background-size: cover;
   justify-content: space-around;
   overflow: auto;
