@@ -29,14 +29,18 @@ const useStyles = makeStyles(theme => ({
         color: theme.palette.text.secondary,
         fontSize: "30px"
     },
+    background: {
+        backgroundImage: "url(https://www.bbcgoodfood.com/sites/default/files/dinner-party-table2-500_0.jpg)"
+    },
     recipeLink: {
         fontSize: "20px"
     },
     weekdays: {
-        backgroundColor: "rgb(209,176,212)",
+        backgroundColor: "rgb(159,65,152)",
         padding: theme.spacing(2),
         textAlign: 'center',
-        color: theme.palette.text.secondary,
+        color: "white",
+
     }
 }));
 
@@ -54,9 +58,14 @@ export default function CurrentRecipes() {
                         <Paper className={classes.weekdays}>Monday</Paper>
                     </Grid>
                     <Grid item sm={9}>
-                        <Paper className={classes.recipeName}>Chicken Cacciatore<br></br>
-                            <Link className={classes.recipeLink} href="https://www.bonappetit.com/recipe/chicken-cacciatore">Recipe instructions here</Link>
-                        </Paper>
+                        <Grid item sm={3}>
+                            <img src="https://www.bbcgoodfood.com/sites/default/files/dinner-party-table2-500_0.jpg" alt="Chicken!"></img>
+                        </Grid>
+                        <Grid item sm={12}>
+                            <Paper className={classes.recipeName}>Chicken Cacciatore<br></br>
+                                <Link className={classes.recipeLink} href="https://www.bonappetit.com/recipe/chicken-cacciatore">Recipe instructions here</Link>
+                            </Paper>
+                        </Grid>
                     </Grid>
                     <Grid item sm={3}>
                         <Paper className={classes.weekdays}>Tuesday</Paper>
