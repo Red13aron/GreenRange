@@ -89,6 +89,7 @@ export default function SignInForm() {
                             label="Remember me"
                         />
                         <Button
+                            href="/home"
                             type="submit"
                             fullWidth
                             variant="contained"
